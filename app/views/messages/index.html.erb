@@ -1,0 +1,23 @@
+<div id='main-window' class="row">
+  <div id='chat-window' class="col-md-8">
+    <ul>
+      <%= sync partial: 'message', collection: @messages %>
+      <%= sync_new partial: 'message', resource: Message.new, scope: 'messages', direction: :append %>
+    </ul>
+  </div>
+
+  <div id='sidebar' class="col-md-4">
+    <button type="button" id='push-me-button' class="btn" data-chat-room-id='<%= @chat_room.id %>'>
+      <div class='button-title'>Push Me</div>
+      <%= sync partial: 'tally', resource: @chat_room, scope: "chat-room-#{@chat_room.id}-tally" %>
+    </button>
+  </div>
+</div>
+
+<div class='row'>
+  <div id='chat-bar' class="col-md-8">
+    <div class="form-group">
+      <input type="input" class="form-control" id="chat-message-input" placeholder="Enter a message" autocomplete='off'>
+    </div>
+  </div>
+</div>

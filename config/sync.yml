@@ -1,0 +1,23 @@
+production:
+  adapter_javascript_url: "//js.pusher.com/2.2/pusher.min.js"
+  app_id: "112099"
+  api_key: "7b39a11bb0d48a78b76d"
+  auth_token: "d2aa259b44eba573008e"
+  adapter: "Pusher"
+  async: true
+
+development:
+  adapter_javascript_url: "//js.pusher.com/2.2/pusher.min.js"
+  app_id: "112099"
+  api_key: "7b39a11bb0d48a78b76d"
+  auth_token: "d2aa259b44eba573008e"
+  adapter: "Pusher"
+  async: true
+
+test:
+  adapter_javascript_url: "//js.pusher.com/2.2/pusher.min.js"
+  app_id: "112099"
+  api_key: "7b39a11bb0d48a78b76d"
+  auth_token: "d2aa259b44eba573008e"
+  adapter: "Pusher"
+  async: true

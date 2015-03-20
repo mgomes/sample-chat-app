@@ -1,0 +1,10 @@
+development:
+  adapter: postgresql
+  database: sample_chat_development
+  host: localhost
+  pool: 30
+
+test: &test
+  adapter: postgresql
+  database: sample_chat_test
+  host: localhost

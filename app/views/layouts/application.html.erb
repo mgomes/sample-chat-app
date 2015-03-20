@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sample Chat</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="apple-touch-icon" href="/assets/app-icon@2x.png"/>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag Sync.adapter_javascript_url %>
+    <%= csrf_meta_tags %>
+
+    <meta name="description" content="Sample real-time Rails chat application">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+</html>

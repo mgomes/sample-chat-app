@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.login-form {
+  margin-top: 100px;
+  padding: 30px;
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+}
+
+#main-window {
+  height: 100%;
+}
+
+#sidebar {
+  padding: 25px;
+}
+
+#chat-window {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 25px;
+  padding-left: 40px;
+  border-right: 2px solid #E8E8E8;
+  padding-bottom: 55px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .message {
+      border-top: 1px solid #E8E8E8;
+      padding: 15px 0;
+
+      span.timestamp {
+        float: right;
+        color: #bec3c7;
+        font-size: 12px;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 32px;
+        color: #8a959b;
+
+        &.poster-name {
+          font-size: 18px;
+          font-weight: 600;
+          color: #555f68;
+        }
+      }
+    }
+  }
+}
+
+#chat-bar {
+  position: fixed;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#push-me-button {
+  border-radius: 50%;
+  color: #259AF4;
+  border-color: #259AF4;
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+
+  &:focus { outline: 0; }
+
+  .button-title {
+    font-size: 18px;
+  }
+
+  .count {
+    font-size: 26px;
+  }
+
+  &.just-pressed {
+    -webkit-animation: neo-flex 400ms linear;
+    -moz-animation: neo-flex 400ms linear;
+    animation: neo-flex 400ms linear;
+  }
+}
+
+@keyframes neo-flex {
+  0% { transform: scale3d(1, 1, 1); }
+  25% { transform: scale3d(1.25, 1.25, 1); }
+  50% { transform: scale3d(1.55, 1.55, 1); }
+  75% { transform: scale3d(1.25, 1.25, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+
+@-webkit-keyframes neo-flex {
+  0% { -webkit-transform: scale3d(1, 1, 1); }
+  25% { -webkit-transform: scale3d(1.25, 1.25, 1); }
+  50% { -webkit-transform: scale3d(1.55, 1.55, 1); }
+  75% { -webkit-transform: scale3d(1.25, 1.25, 1); }
+  100% { -webkit-transform: scale3d(1, 1, 1); }
+}
+
+@-moz-keyframes neo-flex {
+  0% { -moz-transform: scale3d(1, 1, 1); }
+  25% { -moz-transform: scale3d(1.25, 1.25, 1); }
+  50% { -moz-transform: scale3d(1.55, 1.55, 1); }
+  75% { -moz-transform: scale3d(1.25, 1.25, 1); }
+  100% { -moz-transform: scale3d(1, 1, 1); }
+}
